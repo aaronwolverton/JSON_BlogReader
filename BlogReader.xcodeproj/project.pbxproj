@@ -19,6 +19,11 @@
 		C618A82217EB4CAB000748CB /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C618A80A17EB4CAB000748CB /* UIKit.framework */; };
 		C618A82A17EB4CAB000748CB /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = C618A82817EB4CAB000748CB /* InfoPlist.strings */; };
 		C618A82C17EB4CAB000748CB /* BlogReaderTests.m in Sources */ = {isa = PBXBuildFile; fileRef = C618A82B17EB4CAB000748CB /* BlogReaderTests.m */; };
+		C618A83617EB5085000748CB /* MainStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C618A83517EB5085000748CB /* MainStoryboard.storyboard */; };
+		C618A83917EB5368000748CB /* TableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C618A83817EB5368000748CB /* TableViewController.m */; };
+		C618A83C17EB81AA000748CB /* BlogPost.m in Sources */ = {isa = PBXBuildFile; fileRef = C618A83B17EB81AA000748CB /* BlogPost.m */; };
+		C618A83E17EBAAF7000748CB /* treehouse-logo.png in Resources */ = {isa = PBXBuildFile; fileRef = C618A83D17EBAAF7000748CB /* treehouse-logo.png */; };
+		C618A88417EBE840000748CB /* WebViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C618A88317EBE840000748CB /* WebViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -48,6 +53,14 @@
 		C618A82717EB4CAB000748CB /* BlogReaderTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "BlogReaderTests-Info.plist"; sourceTree = "<group>"; };
 		C618A82917EB4CAB000748CB /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		C618A82B17EB4CAB000748CB /* BlogReaderTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BlogReaderTests.m; sourceTree = "<group>"; };
+		C618A83517EB5085000748CB /* MainStoryboard.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = MainStoryboard.storyboard; sourceTree = "<group>"; };
+		C618A83717EB5368000748CB /* TableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TableViewController.h; sourceTree = "<group>"; };
+		C618A83817EB5368000748CB /* TableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TableViewController.m; sourceTree = "<group>"; };
+		C618A83A17EB81AA000748CB /* BlogPost.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BlogPost.h; sourceTree = "<group>"; };
+		C618A83B17EB81AA000748CB /* BlogPost.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BlogPost.m; sourceTree = "<group>"; };
+		C618A83D17EBAAF7000748CB /* treehouse-logo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "treehouse-logo.png"; sourceTree = "<group>"; };
+		C618A88217EBE840000748CB /* WebViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WebViewController.h; sourceTree = "<group>"; };
+		C618A88317EBE840000748CB /* WebViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WebViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -78,6 +91,7 @@
 			isa = PBXGroup;
 			children = (
 				C618A80C17EB4CAB000748CB /* BlogReader */,
+				C618A80D17EB4CAB000748CB /* Supporting Files */,
 				C618A82517EB4CAB000748CB /* BlogReaderTests */,
 				C618A80517EB4CAB000748CB /* Frameworks */,
 				C618A80417EB4CAB000748CB /* Products */,
@@ -109,8 +123,14 @@
 			children = (
 				C618A81517EB4CAB000748CB /* BlogReaderAppDelegate.h */,
 				C618A81617EB4CAB000748CB /* BlogReaderAppDelegate.m */,
+				C618A83717EB5368000748CB /* TableViewController.h */,
+				C618A83817EB5368000748CB /* TableViewController.m */,
+				C618A83517EB5085000748CB /* MainStoryboard.storyboard */,
 				C618A81817EB4CAB000748CB /* Images.xcassets */,
-				C618A80D17EB4CAB000748CB /* Supporting Files */,
+				C618A83A17EB81AA000748CB /* BlogPost.h */,
+				C618A83B17EB81AA000748CB /* BlogPost.m */,
+				C618A88217EBE840000748CB /* WebViewController.h */,
+				C618A88317EBE840000748CB /* WebViewController.m */,
 			);
 			path = BlogReader;
 			sourceTree = "<group>";
@@ -118,12 +138,14 @@
 		C618A80D17EB4CAB000748CB /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				C618A83D17EBAAF7000748CB /* treehouse-logo.png */,
 				C618A80E17EB4CAB000748CB /* BlogReader-Info.plist */,
 				C618A80F17EB4CAB000748CB /* InfoPlist.strings */,
 				C618A81217EB4CAB000748CB /* main.m */,
 				C618A81417EB4CAB000748CB /* BlogReader-Prefix.pch */,
 			);
 			name = "Supporting Files";
+			path = BlogReader;
 			sourceTree = "<group>";
 		};
 		C618A82517EB4CAB000748CB /* BlogReaderTests */ = {
@@ -220,8 +242,10 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C618A83617EB5085000748CB /* MainStoryboard.storyboard in Resources */,
 				C618A81117EB4CAB000748CB /* InfoPlist.strings in Resources */,
 				C618A81917EB4CAB000748CB /* Images.xcassets in Resources */,
+				C618A83E17EBAAF7000748CB /* treehouse-logo.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -241,7 +265,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				C618A81317EB4CAB000748CB /* main.m in Sources */,
+				C618A88417EBE840000748CB /* WebViewController.m in Sources */,
+				C618A83917EB5368000748CB /* TableViewController.m in Sources */,
 				C618A81717EB4CAB000748CB /* BlogReaderAppDelegate.m in Sources */,
+				C618A83C17EB81AA000748CB /* BlogPost.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
